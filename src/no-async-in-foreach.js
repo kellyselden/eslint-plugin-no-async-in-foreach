@@ -49,6 +49,17 @@ module.exports = {
             }
 
             let array = sourceCode.getText(node.callee.object);
+
+            let object = memberExpression;
+
+            while (object.type === 'MemberExpression' && !object.optional) {
+              object = object.object;
+            }
+
+            if (object.optional) {
+              array = `${array} ?? []`;
+            }
+
             let body = functionExpression.body;
             let bodyType = body.type;
 
