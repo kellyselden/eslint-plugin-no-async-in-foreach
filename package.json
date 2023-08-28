@@ -2,7 +2,8 @@
   "name": "eslint-rule-no-async-in-foreach",
   "version": "0.0.0",
   "description": "Prevent .forEach(async code",
-  "main": "index.js",
+  "main": "src/index.js",
+  "files": ["src"],
   "scripts": {
     "lint": "eslint . --ext js,json",
     "test": "mocha"
