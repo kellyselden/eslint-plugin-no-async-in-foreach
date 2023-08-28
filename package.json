@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach/issues"
   },
-  "homepage": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach#readme"
+  "homepage": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach#readme",
+  "engines": {
+    "node": ">=16.13"
+  }
 }
