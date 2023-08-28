@@ -1,7 +1,7 @@
 'use strict';
 
 const { RuleTester } = require('eslint');
-const rule = require('../src');
+const rule = require('../src/no-async-in-foreach');
 
 new RuleTester({
   parserOptions: {
