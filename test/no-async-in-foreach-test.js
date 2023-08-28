@@ -163,6 +163,15 @@ new RuleTester({
           type: 'CallExpression'
         }
       ]
+    },
+    {
+      code: 'async()=>{return foo?.forEach(async(bar)=>await bar)}',
+      errors: [
+        {
+          message: 'An async callback inside `forEach` swallows promises. You should either convert to `for...of` syntax, or swap `forEach` for `map` and wrap in a `Promise.all`.',
+          type: 'CallExpression'
+        }
+      ]
     }
   ]
 });

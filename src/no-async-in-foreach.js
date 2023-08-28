@@ -40,7 +40,13 @@ module.exports = {
           node,
           message: 'An async callback inside `forEach` swallows promises. You should either convert to `for...of` syntax, or swap `forEach` for `map` and wrap in a `Promise.all`.',
           fix(fixer) {
-            if (node.parent.type !== 'ExpressionStatement' && node.parent.type !== 'ChainExpression') {
+            let { parent } = node;
+
+            while (parent.type === 'ChainExpression') {
+              ({ parent } = parent);
+            }
+
+            if (parent.type !== 'ExpressionStatement') {
               return;
             }
 
@@ -57,7 +63,7 @@ module.exports = {
             let object = memberExpression;
 
             while (object.type === 'MemberExpression' && !object.optional) {
-              object = object.object;
+              ({ object } = object);
             }
 
             if (object.optional) {
