@@ -1,0 +1,22 @@
+{
+  "name": "eslint-rule-no-async-in-foreach",
+  "version": "0.0.0",
+  "description": "Prevent .forEach(async code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellyselden/eslint-rule-no-async-in-foreach.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Kelly Selden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach/issues"
+  },
+  "homepage": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach#readme"
+}
