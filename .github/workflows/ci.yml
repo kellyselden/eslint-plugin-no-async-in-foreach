@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  # allow manual running
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - run: npm ci
+    - run: npm run lint
+
+  test:
+    needs: lint
+
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        node:
+        - 16
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node }}
+
+    - run: npm ci
+    - run: npm test
+
+  ember-cli-update:
+    needs: test
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.GitHubToken }}
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - uses: kellyselden/ember-cli-update-action@v5
+      with:
+        autofix_command: npm run lint -- --fix
+        ignore_to: true
