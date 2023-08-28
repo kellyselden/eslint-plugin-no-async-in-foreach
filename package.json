@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-async-in-foreach",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Prevent .forEach(async code",
   "main": "src/index.js",
   "files": [
