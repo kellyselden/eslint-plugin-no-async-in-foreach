@@ -1,5 +1,5 @@
 {
-  "name": "eslint-rule-no-async-in-foreach",
+  "name": "eslint-plugin-no-async-in-foreach",
   "version": "0.0.1",
   "description": "Prevent .forEach(async code",
   "main": "src/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kellyselden/eslint-rule-no-async-in-foreach.git"
+    "url": "git+https://github.com/kellyselden/eslint-plugin-no-async-in-foreach.git"
   },
   "keywords": [
     "eslint"
@@ -34,9 +34,9 @@
     "renovate-config-standard": "2.1.2"
   },
   "bugs": {
-    "url": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach/issues"
+    "url": "https://github.com/kellyselden/eslint-plugin-no-async-in-foreach/issues"
   },
-  "homepage": "https://github.com/kellyselden/eslint-rule-no-async-in-foreach#readme",
+  "homepage": "https://github.com/kellyselden/eslint-plugin-no-async-in-foreach#readme",
   "engines": {
     "node": ">=16.13"
   }

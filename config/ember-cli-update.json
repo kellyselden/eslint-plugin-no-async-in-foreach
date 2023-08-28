@@ -18,7 +18,7 @@
         {
           "name": "@kellyselden/node-template",
           "options": [
-            "--repo-slug=kellyselden/eslint-rule-no-async-in-foreach",
+            "--repo-slug=kellyselden/eslint-plugin-no-async-in-foreach",
             "--github-actions",
             "--renovate"
           ]
