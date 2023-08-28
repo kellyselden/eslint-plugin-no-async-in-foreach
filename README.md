@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/eslint-plugin-no-async-in-foreach.svg)](https://badge.fury.io/js/eslint-plugin-no-async-in-foreach)
 
-Prevent `.forEach(async` code
+Prevent `.forEach(async` code. Inspired by https://github.com/eslint/eslint/issues/16330.
 
 ### Usage
 
