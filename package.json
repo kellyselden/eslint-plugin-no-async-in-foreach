@@ -19,6 +19,9 @@
   ],
   "author": "Kelly Selden",
   "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=8.40.0"
+  },
   "devDependencies": {
     "@kellyselden/node-template": "4.0.0",
     "chai": "^4.3.7",
