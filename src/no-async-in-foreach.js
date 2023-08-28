@@ -40,6 +40,10 @@ module.exports = {
           node,
           message: 'An async callback inside `forEach` swallows promises. You should either convert to `for...of` syntax, or swap `forEach` for `map` and wrap in a `Promise.all`.',
           fix(fixer) {
+            if (node.parent.type !== 'ExpressionStatement' && node.parent.type !== 'ChainExpression') {
+              return;
+            }
+
             let element = functionExpression.params[0];
             let rightAssignment;
 
