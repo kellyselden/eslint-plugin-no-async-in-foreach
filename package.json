@@ -35,13 +35,13 @@
     "mocha": "^10.7.0",
     "mocha-helpers": "^9.0.1",
     "renovate-config-standard": "2.1.2",
-    "standard-node-template": "5.0.0"
+    "standard-node-template": "6.1.0"
   },
   "bugs": {
     "url": "https://github.com/kellyselden/eslint-plugin-no-async-in-foreach/issues"
   },
   "homepage": "https://github.com/kellyselden/eslint-plugin-no-async-in-foreach#readme",
   "engines": {
-    "node": ">=18.12"
+    "node": ">=20.9"
   }
 }
