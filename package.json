@@ -23,7 +23,7 @@
     "eslint": ">=9"
   },
   "devDependencies": {
-    "@kellyselden/node-template": "6.6.1",
+    "@kellyselden/node-template": "6.11.1",
     "chai": "^4.5.0",
     "eslint": "^9.34.0",
     "eslint-config-sane-node": "^3.0.3",
