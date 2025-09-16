@@ -23,7 +23,7 @@
     "eslint": ">=8.40.0"
   },
   "devDependencies": {
-    "@kellyselden/node-template": "6.4.0",
+    "@kellyselden/node-template": "6.5.2",
     "chai": "^4.5.0",
     "eslint": "^8.57.1",
     "eslint-config-sane": "^1.0.2",
@@ -34,7 +34,7 @@
     "eslint-plugin-prefer-let": "^4.0.0",
     "mocha": "^11.7.0",
     "mocha-helpers": "^10.0.0",
-    "renovate-config-standard": "2.2.0",
+    "renovate-config-standard": "2.3.0",
     "standard-node-template": "7.2.0"
   },
   "bugs": {
