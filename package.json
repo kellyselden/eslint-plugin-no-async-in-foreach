@@ -20,7 +20,7 @@
   "author": "Kelly Selden",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=8.40.0"
+    "eslint": ">=9"
   },
   "devDependencies": {
     "@kellyselden/node-template": "6.6.1",
