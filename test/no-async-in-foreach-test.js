@@ -3,11 +3,7 @@
 const { RuleTester } = require('eslint');
 const rule = require('../src/no-async-in-foreach');
 
-new RuleTester({
-  parserOptions: {
-    ecmaVersion: '2021'
-  }
-}).run('no-async-in-foreach', rule, {
+new RuleTester().run('no-async-in-foreach', rule, {
   valid: [
     'foo.forEach',
     'foo.forEach()',
