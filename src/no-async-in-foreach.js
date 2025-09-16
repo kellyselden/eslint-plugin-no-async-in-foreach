@@ -2,7 +2,7 @@
 
 module.exports = {
   meta: {
-    fixable: true
+    fixable: true,
   },
 
   create(context) {
@@ -111,9 +111,9 @@ module.exports = {
             body = `${assignment}${body}`;
 
             return fixer.replaceText(node, `for (let ${index} = 0; ${index} < ${array}.length; ${index}++) {${body}}`);
-          }
+          },
         });
-      }
+      },
     };
-  }
+  },
 };
